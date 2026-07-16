@@ -63,22 +63,30 @@ Tested on **"Deep Residual Learning for Image Recognition"** (He et al., 2015 �
 
 ### Formula Output Example
 
-**Input (PDF text):**
+**Input** — raw PDF text extraction (broken):
 ```
 -(ħ²/2m) ∇²Ψ(r) + V(r)Ψ(r) = EΨ(r)
 ```
 
-**Output (Markdown):**
-```markdown
+**paper2md output** — generated Markdown source:
+```
 $$
 -\frac{\hbar^2}{2m} \nabla^2 \Psi(\mathbf{r}) + V(\mathbf{r})\Psi(\mathbf{r}) = E\Psi(\mathbf{r})
 $$
 ```
-Renders perfectly in Obsidian, KaTeX, and MathJax — no `\tag{}` errors.
+
+**Rendered** (GitHub / Obsidian / KaTeX / MathJax):
+
+$$
+-\frac{\hbar^2}{2m} \nabla^2 \Psi(\mathbf{r}) + V(\mathbf{r})\Psi(\mathbf{r}) = E\Psi(\mathbf{r})
+$$
+
+Zero `\tag{}` errors. Drops directly into Obsidian with no edits.
 
 ### Table Output Example
 
-```markdown
+**paper2md output** — rendered GFM table:
+
 | Method | top-1 err. | top-5 err. |
 |--------|-----------|-----------|
 | VGG-16 | 28.07 | 9.33 |
@@ -86,7 +94,6 @@ Renders perfectly in Obsidian, KaTeX, and MathJax — no `\tag{}` errors.
 | ResNet-50 | 22.85 | 6.71 |
 | ResNet-101 | 21.75 | 6.05 |
 | ResNet-152 | **21.43** | **5.71** |
-```
 
 ---
 

@@ -26,18 +26,25 @@ This directory contains real conversion examples showing paper2md output on actu
 F(x) = H(x) - x
 ```
 
-**paper2md output (correct LaTeX):**
-```markdown
+**paper2md output** — Markdown source:
+```
 $$
 \mathcal{F}(\mathbf{x}) = \mathcal{H}(\mathbf{x}) - \mathbf{x}
 $$
 ```
 
+**Rendered** (GitHub / Obsidian / KaTeX):
+
+$$
+\mathcal{F}(\mathbf{x}) = \mathcal{H}(\mathbf{x}) - \mathbf{x}
+$$
+
 The residual learning formulation — preserved exactly, renders in Obsidian without errors.
 
 ### Sample Table (ImageNet Results)
 
-```markdown
+**Rendered GFM table:**
+
 | Model | top-1 err. | top-5 err. | Parameters |
 |-------|-----------|-----------|------------|
 | VGG-16 | 28.07 | 9.33 | 138M |
@@ -45,7 +52,6 @@ The residual learning formulation — preserved exactly, renders in Obsidian wit
 | ResNet-50 | 22.85 | 6.71 | 25.6M |
 | ResNet-101 | 21.75 | 6.05 | 44.5M |
 | ResNet-152 | **21.43** | **5.71** | 60.2M |
-```
 
 ---
 
