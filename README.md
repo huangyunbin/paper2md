@@ -63,29 +63,23 @@ Tested on **"Deep Residual Learning for Image Recognition"** (He et al., 2015 �
 
 ### Formula Output Example
 
-**Input** — raw PDF text extraction (broken):
-```
--(ħ²/2m) ∇²Ψ(r) + V(r)Ψ(r) = EΨ(r)
-```
-
-**paper2md output** — generated Markdown source:
-```
-$$
--\frac{\hbar^2}{2m} \nabla^2 \Psi(\mathbf{r}) + V(\mathbf{r})\Psi(\mathbf{r}) = E\Psi(\mathbf{r})
-$$
-```
-
-**Rendered** (GitHub / Obsidian / KaTeX / MathJax):
+| | Content |
+|---|---|
+| ❌ **Before** (raw PDF text) | `-(ħ²/2m) ∇²Ψ(r) + V(r)Ψ(r) = EΨ(r)` |
+| ✅ **After** (paper2md) | See rendered formula below |
 
 $$
 -\frac{\hbar^2}{2m} \nabla^2 \Psi(\mathbf{r}) + V(\mathbf{r})\Psi(\mathbf{r}) = E\Psi(\mathbf{r})
 $$
 
-Zero `\tag{}` errors. Drops directly into Obsidian with no edits.
+KaTeX/MathJax/Obsidian compatible — zero `\tag{}` errors, correct `$$` block delimiters.
 
 ### Table Output Example
 
-**paper2md output** — rendered GFM table:
+| | |
+|---|---|
+| ❌ **Before** (raw PDF text) | Garbled columns, broken alignment, missing separators |
+| ✅ **After** (paper2md) | Valid GFM table, renders anywhere |
 
 | Method | top-1 err. | top-5 err. |
 |--------|-----------|-----------|

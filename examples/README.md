@@ -21,19 +21,10 @@ This directory contains real conversion examples showing paper2md output on actu
 
 ### Sample Formula
 
-**Original PDF (garbled text extraction):**
-```
-F(x) = H(x) - x
-```
-
-**paper2md output** — Markdown source:
-```
-$$
-\mathcal{F}(\mathbf{x}) = \mathcal{H}(\mathbf{x}) - \mathbf{x}
-$$
-```
-
-**Rendered** (GitHub / Obsidian / KaTeX):
+| | Content |
+|---|---|
+| ❌ **Before** (raw PDF text) | `F(x) = H(x) - x` |
+| ✅ **After** (paper2md) | Correct residual formulation below |
 
 $$
 \mathcal{F}(\mathbf{x}) = \mathcal{H}(\mathbf{x}) - \mathbf{x}
@@ -43,7 +34,10 @@ The residual learning formulation — preserved exactly, renders in Obsidian wit
 
 ### Sample Table (ImageNet Results)
 
-**Rendered GFM table:**
+| | |
+|---|---|
+| ❌ **Before** (raw PDF text) | Misaligned columns, broken separators |
+| ✅ **After** (paper2md) | Valid GFM table, renders anywhere |
 
 | Model | top-1 err. | top-5 err. | Parameters |
 |-------|-----------|-----------|------------|
